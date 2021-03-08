@@ -1,10 +1,16 @@
 import { Nav } from 'react-bootstrap';
 
 const Footer = () => (
-    <Nav className='sticky-bottom justify-content-center'>
-        <Nav.Link className='f heading font-weight-bold' href='https://deybyr647.com' target='_blank' rel='noopener noreferrer'>
-          &copy; 2020 | Deyby Rodriguez
-        </Nav.Link>
+    <Nav className='sticky-bottom justify-content-center font-weight-bold'>
+        <Nav.Item className="nav-link">
+            <a 
+                href="https://deybyr647.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+            >
+                &copy; 2021 | Deyby Rodriguez
+            </a>
+        </Nav.Item>
     </Nav>
 )
 
