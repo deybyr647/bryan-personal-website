@@ -5,7 +5,7 @@ import { Nav, Navbar } from 'react-bootstrap';
 
 const Navigation = () => {
     return (
-        <Navbar variant='light' expand='lg'>
+        <Navbar variant='light' expand='lg' className="sticky-top">
             <Navbar.Brand>
                 <Link 
                     href="/"
