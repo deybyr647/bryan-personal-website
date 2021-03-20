@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import Image from 'next/image';
 
-import { Nav, Navbar } from 'react-bootstrap';
+import { Nav, Navbar, Image } from 'react-bootstrap';
+import styles from '../styles/etc.module.css';
 
 const Navigation = () => {
     return (
@@ -10,7 +10,7 @@ const Navigation = () => {
                 <Link 
                     href="/"
                 >
-                    <a><Image src="/Logo.svg" width={50} height={50}/></a>
+                    <a><Image src="/Logo.svg" alt="Logo" width="40px" className={styles.logo}/></a>
                 </Link>
             </Navbar.Brand>
 
