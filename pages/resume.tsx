@@ -1,15 +1,31 @@
-import { Container, Row, Col, Jumbotron, Image } from 'react-bootstrap';
+import { Container, Row, Col, Jumbotron, ResponsiveEmbed } from 'react-bootstrap';
 
 import Metadata from '../components/Metadata';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
+const ResumeDoc = () => {
+    return (
+        <ResponsiveEmbed>
+            <embed src="/Resume.pdf" width="100%" height="100%" type="application/pdf"/>
+        </ResponsiveEmbed>
+    );
+}
+
 const ResumePageContent = () => {
     return (
         <Container fluid>
-            <Row>
+            <Row className="d-flex flex-column align-items-center justify-content-center">
                 <Col>
-                    <h1>Resume Page</h1>
+                    <Jumbotron className="text-center shadow">
+                        <h2>My Resume</h2>
+                    </Jumbotron>
+                </Col>
+
+                <Col>
+                    <Jumbotron className="shadow">
+                        <ResumeDoc/>
+                    </Jumbotron>
                 </Col>
             </Row>
         </Container>

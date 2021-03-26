@@ -26,3 +26,9 @@ a:hover {
 .navbar, .nav {
   background-color: #B3001B;
 }
+
+@media(max-width: 1000px){
+  .embed-responsive-1by1::before{
+      padding-top: 150%;
+  }
+}

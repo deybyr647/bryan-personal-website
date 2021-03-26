@@ -5,7 +5,7 @@ import styles from '../styles/etc.module.css';
 
 const Navigation = () => {
     return (
-        <Navbar variant='light' expand='lg' className="sticky-top">
+        <Navbar variant='light' expand='lg' className="sticky-top mb-4">
             <Navbar.Brand>
                 <Link 
                     href="/"
