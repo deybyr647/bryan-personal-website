@@ -17,17 +17,17 @@ const Navigation = () => {
             <Navbar.Toggle aria-controls="nav"/>
             <Navbar.Collapse id="nav">
                 <Nav className="font-weight-bold ml-auto text-center">
-                    <Nav.Item className="nav-link">
-                        <Link href="/portfolio">Portfolio</Link>
-                    </Nav.Item>
+                    <Link href="/portfolio">
+                        <a className="nav-link">Portfolio</a>
+                    </Link>
 
-                    <Nav.Item className="nav-link">
-                        <Link href="/resume">Resume</Link>
-                    </Nav.Item>
+                    <Link href="/resume">
+                        <a className="nav-link">Resume</a>
+                    </Link>
 
-                    <Nav.Item className="nav-link">
-                        <Link href="/about">About</Link>
-                    </Nav.Item>
+                    <Link href="/about">
+                        <a className="nav-link">About</a>
+                    </Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

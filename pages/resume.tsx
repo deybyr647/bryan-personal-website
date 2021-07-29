@@ -21,8 +21,10 @@ const ResumePageContent = () => {
                         <h2>My Resume</h2>
                     </Jumbotron>
                 </Col>
+            </Row>
 
-                <Col>
+            <Row className="justify-content-center">
+                <Col xs={12} sm={12} lg={8} xl={6}>
                     <Jumbotron className="shadow">
                         <ResumeDoc/>
                     </Jumbotron>
