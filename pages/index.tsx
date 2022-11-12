@@ -1,65 +1,137 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import { Container, Row, Col, Jumbotron, Image, Card, ListGroup, Accordion, Button } from 'react-bootstrap';
+import styles from '../styles/Landing.module.css';
 
-export default function Home() {
+import Metadata from '../components/Metadata';
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
+
+const Landing = () => {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Container fluid className="my-3">
+      <Row>
+        <Col md={12} lg={4} xl={4} className="mb-2">
+          <Card className="shadow text-left">
+            <Card.Img src="/bryan2.webp" alt="Bryan"/>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+            <Card.Body>
+              <Card.Title className="text-center">A Little Intro...</Card.Title>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+              <Card.Text>
+                Hey there! Welcome to my site!
+                Make yourself at home while you grab some water. 
+                This is my online portfolio, and is home to various things, from my resume and contact information,
+                to a variety of personal projects I've invested time in. 
+                I'm always willing to collaborate, and if you are too, don't hesitate to contact me! I don't bite, usually...
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+        <Col md={12} lg={4} xl={4} className="order-first order-lg-0">
+            <Jumbotron className="text-center shadow">
+              <Image src="/bryan.jpg" className="w-100 rounded" alt="Bryan"/>
+              <h3 className="mt-4">Bryan Bonilla Garay</h3>
+              <p>Aspiring Computer Engineer</p>
+            </Jumbotron>
+        </Col>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+        <Col md={12} lg={4} xl={4} className="mb-2">
+          <Card className="shadow text-left">
+            <Card.Img src="/hardware.jpg" alt="Bryan"/>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+            <Card.Body>
+              <Card.Title className="text-center">Hardware: What I'm All About</Card.Title>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+              <Card.Text>
+                Spoiler Alert! System & Hardware programming is what I'm all about!
+                Here are some of my latest projects at a glance. Feel free to check
+                them out, along with all my other projects in the Portfolio page!
+              </Card.Text>
+            </Card.Body>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+            <ListGroup className="list-group-flush">
+              <ListGroup.Item>
+                <Accordion>
+                  <Card>
+                    <Accordion.Toggle as={Button} variant="info" eventKey="0">
+                      Radar
+                    </Accordion.Toggle>
+
+                    <Accordion.Collapse eventKey="0">
+                      <>
+                        <Card.Img src="/Radar.jpg"/>
+
+                        <Card.Body>
+                          <Card.Text>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil molestias ratione aspernatur ea. Inventore nemo fugiat officia necessitatibus ab perferendis, debitis recusandae pariatur vel. Consequatur fuga perspiciatis sapiente blanditiis veritatis.
+                          </Card.Text>
+                        </Card.Body>
+                      </>
+                    </Accordion.Collapse>
+                  </Card>
+                </Accordion>
+              </ListGroup.Item>
+
+              <ListGroup.Item>
+                <Accordion>
+                  <Card>
+                      <Accordion.Toggle as={Button} variant="info" eventKey="0">
+                        Radar
+                      </Accordion.Toggle>
+
+                    <Accordion.Collapse eventKey="0">
+                      <>
+                        <Card.Img src="/Radar.jpg"/>
+
+                        <Card.Body>
+                          <Card.Text>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil molestias ratione aspernatur ea. Inventore nemo fugiat officia necessitatibus ab perferendis, debitis recusandae pariatur vel. Consequatur fuga perspiciatis sapiente blanditiis veritatis.
+                          </Card.Text>
+                        </Card.Body>
+                      </>
+                    </Accordion.Collapse>
+                  </Card>
+                </Accordion>
+              </ListGroup.Item>
+
+              <ListGroup.Item>
+                <Accordion>
+                  <Card>
+                    <Accordion.Toggle as={Button} variant="info" eventKey="0">
+                        Radar
+                    </Accordion.Toggle>
+
+                    <Accordion.Collapse eventKey="0">
+                      <>
+                        <Card.Img src="/Radar.jpg"/>
+
+                        <Card.Body>
+                          <Card.Text>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil molestias ratione aspernatur ea. Inventore nemo fugiat officia necessitatibus ab perferendis, debitis recusandae pariatur vel. Consequatur fuga perspiciatis sapiente blanditiis veritatis.
+                          </Card.Text>
+                        </Card.Body>
+                      </>
+                    </Accordion.Collapse>
+                  </Card>
+                </Accordion>
+              </ListGroup.Item>
+            </ListGroup>
+          </Card>
+        </Col>
+      </Row>
+    </Container>
   )
 }
+
+const LandingPage = () => {
+  return (
+    <>
+      <Metadata title="Home"/>
+      <Navigation/>
+      <Landing/>
+      <Footer/>
+    </>
+  )
+}
+
+export default LandingPage;
